@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "stained_trees:black_leaves",
+    "stained_trees:blue_leaves",
+    "stained_trees:brown_leaves",
+    "stained_trees:cyan_leaves",
+    "stained_trees:gray_leaves",
+    "stained_trees:light_blue_leaves",
+    "stained_trees:light_gray_leaves",
+    "stained_trees:lime_leaves",
+    "stained_trees:magenta_leaves",
+    "stained_trees:orange_leaves",
+    "stained_trees:pink_leaves",
+    "stained_trees:purple_leaves",
+    "stained_trees:red_leaves",
+    "stained_trees:white_leaves",
+    "stained_trees:yellow_leaves"
+  ]
+}
