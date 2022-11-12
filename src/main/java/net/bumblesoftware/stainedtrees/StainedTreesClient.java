@@ -1,44 +1,61 @@
 package net.bumblesoftware.stainedtrees;
 
-import net.bumblesoftware.stainedtrees.block.STBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.render.RenderLayer;
+
+import static net.bumblesoftware.stainedtrees.block.STBlocks.*;
+
 public class StainedTreesClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         //Leaves
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.BLACK_LEAVES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.BLUE_LEAVES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.BROWN_LEAVES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.CYAN_LEAVES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.GRAY_LEAVES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.LIGHT_BLUE_LEAVES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.LIGHT_GRAY_LEAVES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.LIME_LEAVES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.MAGENTA_LEAVES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.ORANGE_LEAVES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.PINK_LEAVES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.PURPLE_LEAVES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.RED_LEAVES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.WHITE_LEAVES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.YELLOW_LEAVES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.BLACK_SAPLING, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.BLUE_SAPLING, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.BROWN_SAPLING, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.CYAN_SAPLING, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.GRAY_SAPLING, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.LIGHT_BLUE_SAPLING, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.LIGHT_GRAY_SAPLING, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.LIME_SAPLING, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.MAGENTA_SAPLING, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.ORANGE_SAPLING, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.PINK_SAPLING, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.PURPLE_SAPLING, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.RED_SAPLING, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.WHITE_SAPLING, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(STBlocks.YELLOW_SAPLING, RenderLayer.getCutout());
-
-
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(),
+                BLACK_LEAVES,
+                BLUE_LEAVES,
+                BROWN_LEAVES,
+                CYAN_LEAVES,
+                GRAY_LEAVES,
+                LIGHT_BLUE_LEAVES,
+                LIGHT_GRAY_LEAVES,
+                LIME_LEAVES,
+                MAGENTA_LEAVES,
+                ORANGE_LEAVES,
+                PINK_LEAVES,
+                PURPLE_LEAVES,
+                RED_LEAVES,
+                WHITE_LEAVES,
+                YELLOW_LEAVES,
+                BLACK_SAPLING,
+                BLUE_SAPLING,
+                BROWN_SAPLING,
+                CYAN_SAPLING,
+                GRAY_SAPLING,
+                LIGHT_BLUE_SAPLING,
+                LIGHT_GRAY_SAPLING,
+                LIME_SAPLING,
+                MAGENTA_SAPLING,
+                ORANGE_SAPLING,
+                PINK_SAPLING,
+                PURPLE_SAPLING,
+                RED_SAPLING,
+                WHITE_SAPLING,
+                YELLOW_SAPLING,
+                POTTED_BLACK_SAPLING,
+                POTTED_BLUE_SAPLING,
+                POTTED_BROWN_SAPLING,
+                POTTED_CYAN_SAPLING,
+                POTTED_GRAY_SAPLING,
+                POTTED_LIGHT_BLUE_SAPLING,
+                POTTED_LIGHT_GRAY_SAPLING,
+                POTTED_LIME_SAPLING,
+                POTTED_MAGENTA_SAPLING,
+                POTTED_ORANGE_SAPLING,
+                POTTED_PINK_SAPLING,
+                POTTED_PURPLE_SAPLING,
+                POTTED_RED_SAPLING,
+                POTTED_WHITE_SAPLING,
+                POTTED_YELLOW_SAPLING
+        );
     }
 }

@@ -29,10 +29,10 @@ import java.util.List;
 
 @SuppressWarnings("OptionalGetWithoutIsPresent")
 public class STUtil {
-    public static boolean never(BlockState blockState, net.minecraft.world.BlockView blockView, BlockPos blockPos) {
+    public static boolean never(BlockState ignoredBlockState, BlockView ignoredBlockView, BlockPos ignoredBlockPos) {
         return false;
     }
-    public static Boolean canSpawnOnLeaves(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {
+    public static Boolean canSpawnOnLeaves(BlockState ignoredState, BlockView ignoredWorld, BlockPos ignoredPos, EntityType<?> type) {
         return type == EntityType.OCELOT || type == EntityType.PARROT;
     }
 
@@ -43,6 +43,10 @@ public class STUtil {
     }
     public static <B extends Block> B registerBlocks(B block, String name) {
         return registerBlocks(block, name , ItemGroup.DECORATIONS);
+    }
+    public static <B extends Block> B registerPottedSapling(B block, String name) {
+        Registry.register(Registry.BLOCK, new Identifier(StainedTrees.MOD_ID, name), block);
+        return block;
     }
     public static RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> registerTreeFeature(String colour, Block block) {
         return ConfiguredFeatures.register(
