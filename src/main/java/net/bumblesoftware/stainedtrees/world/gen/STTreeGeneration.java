@@ -1,60 +1,53 @@
 package net.bumblesoftware.stainedtrees.world.gen;
 
-import net.bumblesoftware.stainedtrees.block.STBlocks;
-import net.bumblesoftware.stainedtrees.block.Sapling;
-import net.bumblesoftware.stainedtrees.util.STUtil;
-import net.bumblesoftware.stainedtrees.world.feature.STConfiguredFeatures;
-import net.minecraft.util.registry.RegistryEntry;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.TreeFeatureConfig;
+import net.bumblesoftware.stainedtrees.world.feature.STPlacedFeatures;
+
+import static net.bumblesoftware.stainedtrees.util.STUtil.*;
 
 public class STTreeGeneration {
-    private static void register(RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> tree, Sapling sapling, String colour) {
-      STUtil.generatePlaced(tree, sapling, colour);
-    }
     public static void generateBlackTrees() {
-        register(STConfiguredFeatures.BLACK_TREE, STBlocks.BLACK_SAPLING, "black");
+        generate(STPlacedFeatures.BLACK_TREE);
     }
     public static void generateBlueTrees() {
-        register(STConfiguredFeatures.BLUE_TREE, STBlocks.BLUE_SAPLING, "blue");
+        generate(STPlacedFeatures.BLUE_TREE);
     }
     public static void generateBrownTrees() {
-        register(STConfiguredFeatures.BROWN_TREE, STBlocks.BROWN_SAPLING, "brown");
+        generate(STPlacedFeatures.BROWN_TREE);
     }
     public static void generateCyanTrees() {
-        register(STConfiguredFeatures.CYAN_TREE, STBlocks.CYAN_SAPLING, "cyan");
+        generate(STPlacedFeatures.CYAN_TREE);
     }
     public static void generateGrayTrees() {
-        register(STConfiguredFeatures.GRAY_TREE, STBlocks.GRAY_SAPLING, "gray");
+        generate(STPlacedFeatures.GRAY_TREE);
     }
     public static void generateLightBlueTrees() {
-        register(STConfiguredFeatures.LIGHT_BLUE_TREE, STBlocks.LIGHT_BLUE_SAPLING, "light_blue");
+        generate(STPlacedFeatures.LIGHT_BLUE_TREE);
     }
     public static void generateLightGrayTrees() {
-        register(STConfiguredFeatures.LIGHT_GRAY_TREE, STBlocks.LIGHT_GRAY_SAPLING, "light_gray");
+        generate(STPlacedFeatures.LIGHT_GRAY_TREE);
     }
     public static void generateLimeTrees() {
-        register(STConfiguredFeatures.LIME_TREE, STBlocks.LIME_SAPLING, "lime");
+        generate(STPlacedFeatures.LIME_TREE);
     }
     public static void generateMagentaTrees() {
-        register(STConfiguredFeatures.MAGENTA_TREE, STBlocks.MAGENTA_SAPLING, "magenta");
+        generate(STPlacedFeatures.MAGENTA_TREE);
     }
     public static void generateOrangeTrees() {
-        register(STConfiguredFeatures.ORANGE_TREE, STBlocks.ORANGE_SAPLING, "orange");
+        generate(STPlacedFeatures.ORANGE_TREE);
     }
     public static void generatePinkTrees() {
-        register(STConfiguredFeatures.PINK_TREE, STBlocks.PINK_SAPLING, "pink");
+        generate(STPlacedFeatures.PINK_TREE);
     }
     public static void generatePurpleTrees() {
-        register(STConfiguredFeatures.PURPLE_TREE, STBlocks.PURPLE_SAPLING, "purple");
+        generate(STPlacedFeatures.PURPLE_TREE);
     }
     public static void generateRedTrees() {
-        register(STConfiguredFeatures.RED_TREE, STBlocks.RED_SAPLING, "red");
+        generate(STPlacedFeatures.RED_TREE);
     }
     public static void generateWhiteTrees() {
-        register(STConfiguredFeatures.WHITE_TREE, STBlocks.WHITE_SAPLING, "white");
+        generate(STPlacedFeatures.WHITE_TREE);
     }
     public static void generateYellowTrees() {
-        register(STConfiguredFeatures.YELLOW_TREE, STBlocks.YELLOW_SAPLING, "yellow");
+        generate(STPlacedFeatures.YELLOW_TREE);
     }
 }

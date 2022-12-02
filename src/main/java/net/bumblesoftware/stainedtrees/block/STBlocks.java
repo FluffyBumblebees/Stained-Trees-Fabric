@@ -35,21 +35,96 @@ public class STBlocks {
     public static final Leaves WHITE_LEAVES = registerBlocks(new Leaves(), "white", "leaves");
     public static final Leaves YELLOW_LEAVES = registerBlocks(new Leaves(), "yellow", "leaves");
 
-    public static final Sapling BLACK_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.BLACK_TREE)),   "black", "sapling");
-    public static final Sapling BLUE_SAPLING =  registerBlocks(new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.BLUE_TREE)),   "blue", "sapling");
-    public static final Sapling BROWN_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.BROWN_TREE)),   "brown", "sapling");
-    public static final Sapling CYAN_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.CYAN_TREE)),   "cyan", "sapling");
-    public static final Sapling GRAY_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.GRAY_TREE)),   "gray", "sapling");
-    public static final Sapling LIGHT_BLUE_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.LIGHT_BLUE_TREE)),   "light_blue", "sapling");
-    public static final Sapling LIGHT_GRAY_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.LIGHT_GRAY_TREE)),   "light_gray", "sapling");
-    public static final Sapling LIME_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.LIME_TREE)),   "lime", "sapling");
-    public static final Sapling MAGENTA_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.MAGENTA_TREE)),   "magenta", "sapling");
-    public static final Sapling ORANGE_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.ORANGE_TREE)),   "orange", "sapling");
-    public static final Sapling PINK_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.PINK_TREE)),   "pink", "sapling");
-    public static final Sapling PURPLE_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.PURPLE_TREE)),   "purple", "sapling");
-    public static final Sapling RED_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.RED_TREE)),   "red", "sapling");
-    public static final Sapling WHITE_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.WHITE_TREE)),   "white", "sapling");
-    public static final Sapling YELLOW_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(() -> STConfiguredFeatures.YELLOW_TREE)),   "yellow", "sapling");
+    public static final Sapling BLACK_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(
+            () -> STConfiguredFeatures.BLACK_TREE,
+            () -> STConfiguredFeatures.BLACK_TREE_BEES,
+            () -> STConfiguredFeatures.FAT_BLACK_TREE,
+            () -> STConfiguredFeatures.FAT_BLACK_TREE_BEES
+    )),   "black", "sapling");
+    public static final Sapling BLUE_SAPLING =  registerBlocks(new Sapling(new STSaplingGenerator(
+            () -> STConfiguredFeatures.BLUE_TREE,
+            () -> STConfiguredFeatures.BLUE_TREE_BEES,
+            () -> STConfiguredFeatures.FAT_BLUE_TREE,
+            () -> STConfiguredFeatures.FAT_BLUE_TREE_BEES
+    )),   "blue", "sapling");
+    public static final Sapling BROWN_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(
+            () -> STConfiguredFeatures.BROWN_TREE,
+            () -> STConfiguredFeatures.BROWN_TREE_BEES,
+            () -> STConfiguredFeatures.FAT_BROWN_TREE,
+            () -> STConfiguredFeatures.FAT_BROWN_TREE_BEES
+    )),   "brown", "sapling");
+    public static final Sapling CYAN_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(
+            () -> STConfiguredFeatures.CYAN_TREE,
+            () -> STConfiguredFeatures.CYAN_TREE_BEES,
+            () -> STConfiguredFeatures.FAT_CYAN_TREE,
+            () -> STConfiguredFeatures.FAT_CYAN_TREE_BEES
+    )),   "cyan", "sapling");
+    public static final Sapling GRAY_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(
+            () -> STConfiguredFeatures.GRAY_TREE,
+            () -> STConfiguredFeatures.GRAY_TREE_BEES,
+            () -> STConfiguredFeatures.FAT_GRAY_TREE,
+            () -> STConfiguredFeatures.FAT_GRAY_TREE_BEES
+    )),   "gray", "sapling");
+    public static final Sapling LIGHT_BLUE_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(
+            () -> STConfiguredFeatures.LIGHT_BLUE_TREE,
+            () -> STConfiguredFeatures.LIGHT_BLUE_TREE_BEES,
+            () -> STConfiguredFeatures.FAT_LIGHT_BLUE_TREE,
+            () -> STConfiguredFeatures.FAT_LIGHT_BLUE_TREE_BEES
+    )),   "light_blue", "sapling");
+    public static final Sapling LIGHT_GRAY_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(
+            () -> STConfiguredFeatures.LIGHT_GRAY_TREE,
+            () -> STConfiguredFeatures.LIGHT_GRAY_TREE_BEES,
+            () -> STConfiguredFeatures.FAT_LIGHT_GRAY_TREE,
+            () -> STConfiguredFeatures.FAT_LIGHT_GRAY_TREE_BEES
+    )),   "light_gray", "sapling");
+    public static final Sapling LIME_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(
+            () -> STConfiguredFeatures.LIME_TREE,
+            () -> STConfiguredFeatures.LIME_TREE_BEES,
+            () -> STConfiguredFeatures.FAT_LIME_TREE,
+            () -> STConfiguredFeatures.FAT_LIME_TREE_BEES
+    )),   "lime", "sapling");
+    public static final Sapling MAGENTA_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(
+            () -> STConfiguredFeatures.MAGENTA_TREE,
+            () -> STConfiguredFeatures.MAGENTA_TREE_BEES,
+            () -> STConfiguredFeatures.FAT_MAGENTA_TREE,
+            () -> STConfiguredFeatures.FAT_MAGENTA_TREE_BEES
+    )),   "magenta", "sapling");
+    public static final Sapling ORANGE_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(
+            () -> STConfiguredFeatures.ORANGE_TREE,
+            () -> STConfiguredFeatures.ORANGE_TREE_BEES,
+            () -> STConfiguredFeatures.FAT_ORANGE_TREE,
+            () -> STConfiguredFeatures.FAT_ORANGE_TREE_BEES
+    )),   "orange", "sapling");
+    public static final Sapling PINK_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(
+            () -> STConfiguredFeatures.PINK_TREE,
+            () -> STConfiguredFeatures.PINK_TREE_BEES,
+            () -> STConfiguredFeatures.FAT_PINK_TREE,
+            () -> STConfiguredFeatures.FAT_PINK_TREE_BEES
+    )),   "pink", "sapling");
+    public static final Sapling PURPLE_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(
+            () -> STConfiguredFeatures.PURPLE_TREE,
+            () -> STConfiguredFeatures.PURPLE_TREE_BEES,
+            () -> STConfiguredFeatures.FAT_PURPLE_TREE,
+            () -> STConfiguredFeatures.FAT_PURPLE_TREE_BEES
+    )),   "purple", "sapling");
+    public static final Sapling RED_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(
+            () -> STConfiguredFeatures.RED_TREE,
+            () -> STConfiguredFeatures.RED_TREE_BEES,
+            () -> STConfiguredFeatures.FAT_RED_TREE,
+            () -> STConfiguredFeatures.FAT_RED_TREE_BEES
+    )),   "red", "sapling");
+    public static final Sapling WHITE_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(
+            () -> STConfiguredFeatures.WHITE_TREE,
+            () -> STConfiguredFeatures.WHITE_TREE_BEES,
+            () -> STConfiguredFeatures.FAT_WHITE_TREE,
+            () -> STConfiguredFeatures.FAT_WHITE_TREE_BEES
+    )),   "white", "sapling");
+    public static final Sapling YELLOW_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(
+            () -> STConfiguredFeatures.YELLOW_TREE,
+            () -> STConfiguredFeatures.YELLOW_TREE_BEES,
+            () -> STConfiguredFeatures.FAT_YELLOW_TREE,
+            () -> STConfiguredFeatures.FAT_YELLOW_TREE_BEES
+    )),   "yellow", "sapling");
 
     public static final Block POTTED_BLACK_SAPLING = registerBlocks(new ShortenedFlowerPotBlock(BLACK_SAPLING), "black", "sapling");
     public static final Block POTTED_BLUE_SAPLING =  registerBlocks(new ShortenedFlowerPotBlock(BLUE_SAPLING), "blue", "sapling");
