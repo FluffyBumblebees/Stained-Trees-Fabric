@@ -99,4 +99,9 @@ public class STConfiguredFeatures {
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> FAT_YELLOW_TREE = fatOak("fat_" + colour14, STBlocks.YELLOW_LEAVES);
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> FAT_YELLOW_TREE_BEES = fatOakBees("fat_" + colour14 + "_bees", STBlocks.YELLOW_LEAVES);
 
+    private static final String colour15 = "rainbow";
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> RAINBOW_TREE = defOak(colour15, STBlocks.RAINBOW_LEAVES);
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> RAINBOW_TREE_BEES = defOakBees(colour15 + "_bees", STBlocks.RAINBOW_LEAVES);
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> FAT_RAINBOW_TREE = fatOak("fat_" + colour15, STBlocks.RAINBOW_LEAVES);
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> FAT_RAINBOW_TREE_BEES = fatOakBees("fat_" + colour15 + "_bees", STBlocks.RAINBOW_LEAVES);
 }

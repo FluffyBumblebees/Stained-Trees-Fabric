@@ -15,6 +15,8 @@
   "block.stained_trees.red_leaves": "Red Stained Oak Leaves",
   "block.stained_trees.white_leaves": "White Stained Oak Leaves",
   "block.stained_trees.yellow_leaves": "Yellow Stained Oak Leaves",
+  "block.stained_trees.rainbow_leaves": "Rainbow Oak Leaves",
+
   "block.stained_trees.black_sapling": "Black Stained Oak Sapling",
   "block.stained_trees.blue_sapling": "Blue Stained Oak Sapling",
   "block.stained_trees.brown_sapling": "Brown Stained Oak Sapling",
@@ -29,5 +31,6 @@
   "block.stained_trees.purple_sapling": "Purple Stained Oak Sapling",
   "block.stained_trees.red_sapling": "Red Stained Oak Sapling",
   "block.stained_trees.white_sapling": "White Stained Oak Sapling",
-  "block.stained_trees.yellow_sapling": "Yellow Stained Oak Sapling"
+  "block.stained_trees.yellow_sapling": "Yellow Stained Oak Sapling",
+  "block.stained_trees.rainbow_sapling": "Rainbow Oak Sapling"
 }

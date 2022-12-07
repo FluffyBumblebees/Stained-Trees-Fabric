@@ -34,6 +34,7 @@ public class STBlocks {
     public static final Leaves RED_LEAVES = registerBlocks(new Leaves(), "red", "leaves");
     public static final Leaves WHITE_LEAVES = registerBlocks(new Leaves(), "white", "leaves");
     public static final Leaves YELLOW_LEAVES = registerBlocks(new Leaves(), "yellow", "leaves");
+    public static final Leaves RAINBOW_LEAVES = registerBlocks(new Leaves(), "rainbow", "leaves");
 
     public static final Sapling BLACK_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(
             () -> STConfiguredFeatures.BLACK_TREE,
@@ -125,6 +126,12 @@ public class STBlocks {
             () -> STConfiguredFeatures.FAT_YELLOW_TREE,
             () -> STConfiguredFeatures.FAT_YELLOW_TREE_BEES
     )),   "yellow", "sapling");
+    public static final Sapling RAINBOW_SAPLING = registerBlocks(new Sapling(new STSaplingGenerator(
+            () -> STConfiguredFeatures.RAINBOW_TREE,
+            () -> STConfiguredFeatures.RAINBOW_TREE_BEES,
+            () -> STConfiguredFeatures.FAT_RAINBOW_TREE,
+            () -> STConfiguredFeatures.FAT_RAINBOW_TREE_BEES
+    )),   "rainbow", "sapling");
 
     public static final Block POTTED_BLACK_SAPLING = registerBlocks(new ShortenedFlowerPotBlock(BLACK_SAPLING), "black", "sapling");
     public static final Block POTTED_BLUE_SAPLING =  registerBlocks(new ShortenedFlowerPotBlock(BLUE_SAPLING), "blue", "sapling");
@@ -141,6 +148,8 @@ public class STBlocks {
     public static final Block POTTED_RED_SAPLING = registerBlocks(new ShortenedFlowerPotBlock(RED_SAPLING), "red", "sapling");
     public static final Block POTTED_WHITE_SAPLING = registerBlocks(new ShortenedFlowerPotBlock(WHITE_SAPLING), "white", "sapling");
     public static final Block POTTED_YELLOW_SAPLING = registerBlocks(new ShortenedFlowerPotBlock(YELLOW_SAPLING), "yellow", "sapling");
+    public static final Block POTTED_RAINBOW_SAPLING = registerBlocks(new ShortenedFlowerPotBlock(RAINBOW_SAPLING), "rainbow", "sapling");
+
 
     private static class ShortenedFlowerPotBlock extends FlowerPotBlock {
         public ShortenedFlowerPotBlock(Block content) {

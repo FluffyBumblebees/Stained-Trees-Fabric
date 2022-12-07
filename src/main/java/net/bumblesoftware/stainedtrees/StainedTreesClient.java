@@ -26,6 +26,7 @@ public class StainedTreesClient implements ClientModInitializer {
                 RED_LEAVES,
                 WHITE_LEAVES,
                 YELLOW_LEAVES,
+                RAINBOW_LEAVES,
                 BLACK_SAPLING,
                 BLUE_SAPLING,
                 BROWN_SAPLING,
@@ -41,6 +42,7 @@ public class StainedTreesClient implements ClientModInitializer {
                 RED_SAPLING,
                 WHITE_SAPLING,
                 YELLOW_SAPLING,
+                RAINBOW_SAPLING,
                 POTTED_BLACK_SAPLING,
                 POTTED_BLUE_SAPLING,
                 POTTED_BROWN_SAPLING,
@@ -55,7 +57,8 @@ public class StainedTreesClient implements ClientModInitializer {
                 POTTED_PURPLE_SAPLING,
                 POTTED_RED_SAPLING,
                 POTTED_WHITE_SAPLING,
-                POTTED_YELLOW_SAPLING
+                POTTED_YELLOW_SAPLING,
+                POTTED_RAINBOW_SAPLING
         );
     }
 }
