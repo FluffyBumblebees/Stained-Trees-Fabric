@@ -50,4 +50,7 @@ public class STTreeGeneration {
     public static void generateYellowTrees() {
         generate(STPlacedFeatures.YELLOW_TREE);
     }
+    public static void generateRainbowTrees() {
+        generate(STPlacedFeatures.RAINBOW_TREE);
+    }
 }

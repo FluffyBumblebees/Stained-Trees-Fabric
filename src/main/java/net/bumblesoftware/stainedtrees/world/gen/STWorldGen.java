@@ -1,21 +1,24 @@
 package net.bumblesoftware.stainedtrees.world.gen;
 
+import static net.bumblesoftware.stainedtrees.world.gen.STTreeGeneration.*;
+
 public class STWorldGen {
     public static void generateWorldGen() {
-        STTreeGeneration.generateBlackTrees();
-        STTreeGeneration.generateBlueTrees();
-        STTreeGeneration.generateBrownTrees();
-        STTreeGeneration.generateCyanTrees();
-        STTreeGeneration.generateGrayTrees();
-        STTreeGeneration.generateLightBlueTrees();
-        STTreeGeneration.generateLightGrayTrees();
-        STTreeGeneration.generateLimeTrees();
-        STTreeGeneration.generateMagentaTrees();
-        STTreeGeneration.generateOrangeTrees();
-        STTreeGeneration.generatePinkTrees();
-        STTreeGeneration.generatePurpleTrees();
-        STTreeGeneration.generateRedTrees();
-        STTreeGeneration.generateWhiteTrees();
-        STTreeGeneration.generateYellowTrees();
+        generateBlackTrees();
+        generateBlueTrees();
+        generateBrownTrees();
+        generateCyanTrees();
+        generateGrayTrees();
+        generateLightBlueTrees();
+        generateLightGrayTrees();
+        generateLimeTrees();
+        generateMagentaTrees();
+        generateOrangeTrees();
+        generatePinkTrees();
+        generatePurpleTrees();
+        generateRedTrees();
+        generateWhiteTrees();
+        generateYellowTrees();
+        generateRainbowTrees();
     }
 }

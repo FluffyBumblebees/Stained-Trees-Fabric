@@ -25,9 +25,7 @@ public class STSaplingGenerator extends SaplingGenerator {
         this.fat = fat;
         this.fatBees = fatBees;
     }
-
-    @Nullable
-    @Override
+    @Nullable @Override
     protected RegistryEntry<? extends ConfiguredFeature<?, ?>> getTreeFeature(Random random, boolean bees) {
         if (random.nextInt(10) == 0) {
             return bees ? fatBees.get() : fat.get();

@@ -127,5 +127,12 @@ public class STPlacedFeatures {
             STBlocks.YELLOW_SAPLING,
             "yellow"
     );
-
+    public static final RegistryEntry<PlacedFeature> RAINBOW_TREE = createPlaced(
+            STConfiguredFeatures.RAINBOW_TREE,
+            STConfiguredFeatures.RAINBOW_TREE_BEES,
+            STConfiguredFeatures.FAT_RAINBOW_TREE,
+            STConfiguredFeatures.FAT_RAINBOW_TREE_BEES,
+            STBlocks.RAINBOW_SAPLING,
+            "rainbow"
+    );
 }
